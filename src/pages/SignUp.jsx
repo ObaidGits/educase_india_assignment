@@ -29,19 +29,19 @@ const SignUp = () => {
                     <div className="welcome" style={{"marginBottom":"25px"}}>Create your <br /> PopX account</div>
                     <div className="input-wrapper">
                         <div className="input-div">
-                            <label>Full Name</label>
+                            <label>Full Name<span className='asterisk'>*</span></label>
                             <input type="text" name="fullName" placeholder="Enter full name" value={formData.fullName} onChange={handleChange} />
                         </div>
                         <div className="input-div">
-                            <label>Phone Number</label>
+                            <label>Phone Number<span className='asterisk'>*</span></label>
                             <input type="text" name="phoneNumber" placeholder="Enter phone number" value={formData.phoneNumber} onChange={handleChange} />
                         </div>
                         <div className="input-div">
-                            <label>Email Address</label>
+                            <label>Email Address<span className='asterisk'>*</span></label>
                             <input type="email" name="email" placeholder="Enter email address" value={formData.email} onChange={handleChange} />
                         </div>
                         <div className="input-div">
-                            <label>Password</label>
+                            <label>Password<span className='asterisk'>*</span></label>
                             <input type="text" name="password" placeholder="Enter password" value={formData.password} onChange={handleChange} />
                         </div>
                         <div className="input-div" style={{ marginBottom: "10px" }}>
@@ -49,7 +49,7 @@ const SignUp = () => {
                             <input type="text" name="companyName" placeholder="Enter company name" value={formData.companyName} onChange={handleChange} />
                         </div>
                         <div className="radio-div">
-                            <label>Are you an agency?</label>
+                            <label>Are you an agency?<span className='asterisk'>*</span></label>
                             <div className="radio-wrap">
                                 <input type="radio" id="yes" name="agency" value="yes" checked={formData.agency === "yes"} onChange={handleRadioChange} />
                                 <label htmlFor="yes" style={{ fontSize: "14px" }}>Yes</label>

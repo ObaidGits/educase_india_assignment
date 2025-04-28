@@ -114,7 +114,7 @@ body {
   top: -10px;
   left: 7px;
   font-size: 14px;
-  background: #fff;
+  background: #f7f8f9;
   padding: 2px;
   color: #7331fe;
   font-family: sans-serif;
@@ -172,8 +172,8 @@ body {
 }
 
 .radio-div .radio-wrap input[type="radio" i] {
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   margin: 5px 5px 5px 0;
   accent-color: #6c25ff;
 }
@@ -256,4 +256,10 @@ body {
 .camera-icon img {
   width: 14px;
   height: 15px;
+}
+
+.input-wrapper .input-div .asterisk {
+  color: red;
+  font-size: 17px;
+  position: absolute;
 }
