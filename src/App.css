@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  background-color: #fff;
+  font-family: "Gudea", sans-serif;
+  overflow: hidden;
+}
+
+#home,
+#login,
+#signup,
+#settings {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card {
+  height: 700px;
+  width: 350px;
+  background-color: #f7f8f9;
+  position: relative;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  border: 1px solid #ecedee;
+}
+
+.floating-div {
+  position: absolute;
+  bottom: 0;
+  margin: 25px 20px;
+  display: grid;
+  justify-content: flex-start;
+}
+
+.welcome {
+  font-weight: 800;
+  font-size: 27px;
+  margin-bottom: 5px;
+}
+
+.intro {
+  line-height: 1.5;
+  margin-bottom: 25px;
+  color: #74777b;
+  font-weight: 500;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+.create-btn {
+  background-color: #6c25ff;
+  color: #fff;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.login-btn {
+  height: 40px;
+  border: none;
+  background-color: #cebafb;
+  border-radius: 5px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.login-btn:hover,
+.create-btn:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-btn:focus-visible,
+.login-btn:active {
+  color: #000 !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.create-btn:focus-visible {
+  outline: none !important;
+}
+
+/* Login Page */
+.content-wrap {
+  margin: 25px 15px;
+  height: fit-content;
+}
+
+.input-wrapper {
+  width: 100%;
+}
+
+.input-div {
+  width: 100%;
+  position: relative;
+  margin: 18px 0;
+}
+
+.input-div label {
+  position: absolute;
+  top: -10px;
+  left: 7px;
+  font-size: 14px;
+  background: #fff;
+  padding: 2px;
+  color: #7331fe;
+  font-family: sans-serif;
+}
+
+.input-div input {
+  width: 93%;
+  height: 40px;
+  border: 2px solid #e8e9ea;
+  border-radius: 8px;
+  padding: 0 8px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.input-div input:focus-visible {
+  outline: none;
+}
+
+#login .login-btn {
+  background: #cbcbcb;
+  width: 100%;
+  color: #fff;
+}
+
+#login .login-btn:active {
+  color: #fff !important;
+}
+
+#signup .content-wrap {
+  height: 100%;
+  position: relative;
+}
+
+#signup .create-btn {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+}
+
+.radio-div {
+  display: grid;
+  gap: 5px;
+  padding: 5px;
+}
+
+.radio-div label {
+  font-size: 15px;
+}
+
+.radio-div .radio-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: anchor-center;
+}
+
+.radio-div .radio-wrap input[type="radio" i] {
+  width: 15px;
+  height: 15px;
+  margin: 5px 5px 5px 0;
+  accent-color: #6c25ff;
+}
+
+#settings .header {
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 15px;
+  background: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  color: #272c30;
+  letter-spacing: 0.5px;
+  font-family: system-ui;
+}
+
+#settings .wrapper {
+  padding: 10px 20px;
+  border-bottom: 2px dashed #dfdfdf;
+  padding-bottom: 20px;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 5px 0 15px 0;
+}
+
+.profile .img-wrap .avatar-img {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.name-wrap {
+  display: grid;
+  gap: 8px;
+}
+
+.name-wrap p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+.wrapper .bio {
+  font-size: 14px;
+}
+
+#settings .line-div {
+  position: absolute;
+  border-top: 2px dashed #dfdfdf;
+  height: 15px;
+  width: 100%;
+  bottom: 20px;
+}
+
+.profile .img-wrap {
+  position: relative;
+}
+
+.camera-icon {
+  background: #6c25ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+
+.camera-icon img {
+  width: 14px;
+  height: 15px;
+}
